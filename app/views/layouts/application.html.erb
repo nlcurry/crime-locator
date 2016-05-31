@@ -7,8 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <nav class = "navbar navbar-inverse">
+    <ul class="nav navbar-nav">
+        <li><%= link_to "Home", root_path %></li>
+    </ul>
+  </nav>
 
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>
