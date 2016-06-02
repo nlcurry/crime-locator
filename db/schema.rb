@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160602194733) do
+ActiveRecord::Schema.define(version: 20160602204237) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,11 +19,9 @@ ActiveRecord::Schema.define(version: 20160602194733) do
   create_table "queries", force: :cascade do |t|
     t.float    "latitude"
     t.float    "longitude"
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.string   "address"
-    t.string   "city",       default: "Seattle"
-    t.string   "state",      default: "WA"
   end
 
 end
