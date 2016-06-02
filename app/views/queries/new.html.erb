@@ -1,0 +1,7 @@
+  <h2>Please enter your address</h2>
+
+  <%= form_tag queries_path do %>
+  <%= label_tag("Street Address") %>
+  <%= text_field_tag() %>
+  <%= submit_tag("Search") %>
+  <% end %>
