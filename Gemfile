@@ -40,6 +40,9 @@ group :development, :test do
   gem 'byebug'
   gem 'simplecov'
   gem 'sqlite3'
+  gem 'dotenv-rails'
+  gem 'minitest-vcr'
+  gem 'vcr'
 end
 
 group :development do
