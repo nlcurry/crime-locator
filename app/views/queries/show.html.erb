@@ -1,0 +1,11 @@
+
+<ol>
+<% if @error == nil %>
+  <h2><%= "Top five incidents in 5km radius for  #{Date.today.year} "%></h2>
+  <% @final_results.each do |incident| %>
+  <li><%= "#{incident[0]}, #{incident[1]} instances" %> <br></li>
+  <%end%>
+<% else %>
+  <%= @error %>
+<%end%>
+</ol>
