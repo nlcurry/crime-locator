@@ -1,7 +1,9 @@
-  <h2>Please enter your address</h2>
+<h2>Please enter your address</h2>
+<h3>Format: Street Address, Seattle, WA</h3>
 
-  <%= form_tag queries_path do %>
-  <%= label_tag("Street Address") %>
-  <%= text_field_tag(:address) %>
-  <%= submit_tag("Search") %>
-  <% end %>
+<%= form_for @query do |f| %>
+  <%= f.label :address %><br />
+  <%= f.text_field :address %><br/>
+  <br>
+  <p><%= f.submit %></p>
+<% end %>
