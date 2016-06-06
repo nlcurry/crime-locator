@@ -24,8 +24,6 @@ class QueriesController < ApplicationController
         @results = Query.count_incidents(@incidents)
         @final_results = Query.top_five(@results)
     end
-    # @results = Query.count_incidents(@incidents)
-    # @final_results = Query.top_five(@results)
   end
 
 
